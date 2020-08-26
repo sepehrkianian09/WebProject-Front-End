@@ -1,0 +1,40 @@
+:root {
+    --Body-Background-Color: blue;
+    --Header-Text-Color: cyan;
+    --Header-Shadow-Color: darkred;
+    --Header-Links: magenta;
+    /*badan*/
+}
+
+body {
+    display: flex;
+    background-color: var(--Body-Background-Color);
+}
+
+header {
+    width: 100%;
+    padding: 40px 40px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    color: var(--Header-Text-Color);
+    box-shadow: 0 10px 8px var(--Header-Shadow-Color);
+}
+
+#Header-UnOrderedList {
+    padding-inline-start: 0;
+    margin: 0 0 0 180px;
+}
+
+.Header-UnOrderedList-Item {
+     /*badan*/
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0 10px;
+    color: var(--Header-Text-Color);
+}
+
+.Header-Link {
+    color: var(--Header-Links);
+}
