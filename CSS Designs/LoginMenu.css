@@ -3,10 +3,16 @@
 }
 
 
-#Login-Menu {
+#LogSin-Menu {
     width: 440px;
     display: none;
 }
+
+/*
+#SignUp-Menu {
+    display: none;
+}
+*/
 
 
 #Login-Menu-Header {
@@ -24,20 +30,18 @@
     margin-top: 10px;
 }
 
-.signup-login-text {
+.Signup-login-text {
     text-align: center;
     height: 60px;
-    transition: 0.4s;
+    /*transition: 0.4s;*/
     vertical-align: middle;
     line-height: 60px;
+    background-color: white;
 }
-.signup-login-text:hover {
-    background-color: lightgrey;
+.Signup-login-text:hover {
+    /*background-color: lightgrey;*/
+    opacity: 0.7;
     cursor: pointer;
-}
-.signup-login-text:active {
-    background-color: var(--ActiveSignUpLoginButton);
-    transition: 0.5s;
 }
 
 #logoImage {
@@ -73,4 +77,9 @@
 
 .loginFooter {
     font-size: 16px;
+}
+
+#LoginMenu-SignUp-Link {
+    line-height: 36px;
+    padding-right: 15px;
 }
