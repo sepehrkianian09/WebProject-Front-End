@@ -8,6 +8,7 @@
 #Login-Menu-Header {
     display: flex;
     flex-direction: column;
+    padding-top: 0px;
 }
 
 #welcomeHeader {
@@ -15,28 +16,71 @@
     margin-left: 10px;
     align-content: center;
 }
-.ui.form{
+
+.ui.form {
     padding: 13px;
 }
-#logoImage{
+
+#Signup-Login {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    margin-top: 10px;
+}
+
+#loginText {
+    text-align: center;
+    height: 60px;
+    transition: 0.4s;
+}
+
+#loginText:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+#signupText:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+#signupText {
+    text-align: center;
+    height: 60px;
+    transition: 0.4s;
+}
+
+#loginTextP {
+    margin-top: 15px;
+}
+
+#signupTextP {
+    margin-top: 15px;
+}
+
+#logoImage {
     height: 100px;
     margin-bottom: 50px;
 }
-.loginFooter{
+
+.loginFooter {
     font-size: 16px;
     text-align: right;
     margin-right: 50px;
     margin-bottom: 20px;
 }
 
-#loginButton{
+#loginButton {
     letter-spacing: 2px;
 }
 
-#paragraphInput1{
+#paragraphInput1 {
     margin-bottom: 10px;
 }
-#paragraphInput2{
+
+#paragraphInput2 {
     margin-bottom: 10px;
 }
 
