@@ -35,5 +35,4 @@ function signUpMenu() {
     }
     onLoginPage = false;
     change(whiteColor, greenColor, "block", "none");
-
 }

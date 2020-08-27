@@ -46,22 +46,22 @@
         </div>
         <h3 id="welcomeHeader">Welcome To Licencia</h3>
     </div>
-    <div class="content" id="Login-Menu">
+    <div class="content Login-SignUp-Menu" id="Login-Menu">
         <div class="ui form">
             <!--            divider-->
             <div class="ui form">
-                <div class="ui paragraph paragraphInput" >ایمیل</div>
+                <div class="ui paragraph paragraphInput" >نام کاربری یا ایمیل</div>
                 <label>
-                    <input type="text" class="div-div-div-input" placeholder="email address">
+                    <input type="text" class="div-div-div-input" id="login-KeyPoint" placeholder="Username Or Email">
                 </label>
             </div>
             <div class="ui form">
                 <div class="ui paragraph paragraphInput">رمز عبور</div>
                 <label>
-                    <input type="text" class="div-div-div-input" placeholder="password">
+                    <input type="text" class="div-div-div-input" id="login-Password" placeholder="Password">
                 </label>
             </div>
-            <div class="ui form" id="Login-Footer-Form">
+            <div class="ui form" id="Login-Footer-Form" onsubmit="login()">
                 <label>
                     <input type="submit" id="loginButton" class="ui green button" value="login">
                 </label>
@@ -71,48 +71,63 @@
             </div>
         </div>
     </div>
-    <div class="content" id="SignUp-Menu">
+    <div class="content Login-SignUp-Menu" id="SignUp-Menu">
         <div class="ui form">
             <!--            divider-->
             <div class="ui form">
                 <div class="ui paragraph paragraphInput" >نام کاربری</div>
                 <label>
-                    <input type="text" class="div-div-div-input" placeholder="email address">
+                    <input type="text" class="div-div-div-input" id="SignUp-UserName" placeholder="username">
                 </label>
             </div>
             <div class="ui form">
-                <div class="ui paragraph paragraphInput" >نام و نام خانوادگی</div>
+                <div class="ui paragraph paragraphInput" >نام</div>
                 <label>
-                    <input type="text" class="div-div-div-input" placeholder="password">
+                    <input type="text" class="div-div-div-input" id="SignUp-FirstName" placeholder="FirstName">
+                </label>
+            </div>
+            <div class="ui form">
+                <div class="ui paragraph paragraphInput" >نام خانوادگی</div>
+                <label>
+                    <input type="text" class="div-div-div-input" id="SignUp-LastName" placeholder="LastName">
                 </label>
             </div>
             <div class="ui form">
                 <div class="ui paragraph paragraphInput" >ایمیل</div>
                 <label>
-                    <input type="text" class="div-div-div-input" placeholder="email address">
+                    <input type="text" class="div-div-div-input" id="SignUp-Email" placeholder="Email Address">
                 </label>
             </div>
             <div class="ui form">
-                <div class="ui paragraph paragraphInput">رمز عبور</div>
+                <div class="ui paragraph paragraphInput" >رمز عبور</div>
                 <label>
-                    <input type="text" class="div-div-div-input" placeholder="email address">
+                    <input type="password" class="div-div-div-input" id="SignUp-Password" placeholder="Password">
                 </label>
             </div>
             <div class="ui form">
-                <div class="ui paragraph paragraphInput">تکرار رمز عبور</div>
+                <div class="ui paragraph paragraphInput" >تکرار رمز عبور</div>
                 <label>
-                    <input type="text" class="div-div-div-input" placeholder="email address">
+                    <input type="password" class="div-div-div-input" id="SignUp-RepeatPassword" placeholder="Repeat Password">
                 </label>
             </div>
             <div class="ui form">
+                <label>کارفرما</label>
+                <div class="ui toggle checkbox" >
+                    <input type="checkbox" id="isFreeLancer-ToggleButton" name="public">
+                    <label></label>
+                </div>
+                <label>فریلنسر</label>
+            </div>
+            <div class="ui form" onsubmit="signUp()">
                 <label>
                     <input type="submit" id="signUpButton" class="ui green button" value="ثبت نام">
                 </label>
             </div>
         </div>
     </div>
+    <script src="Js%20Functionals/Login%20SignUp%20Show.js"></script>
 </div>
 
-<script src="Js%20Functionals/JS1.js"></script>
+<script src="Js%20Functionals/Login%20SignUp%20Show.js"></script>
 </body>
 </html>
