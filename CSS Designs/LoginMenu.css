@@ -1,6 +1,7 @@
 #Login-Menu {
-    width: 40%;
+    width: 440px;
     display: none;
+
 }
 
 
@@ -10,6 +11,34 @@
 }
 
 #welcomeHeader {
-    /*badan*/
+    margin-bottom: 20px;
+    margin-left: 10px;
+    align-content: center;
 }
+.ui.form{
+    padding: 13px;
+}
+#logoImage{
+    height: 100px;
+    margin-bottom: 50px;
+}
+.loginFooter{
+    font-size: 16px;
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+#loginButton{
+    letter-spacing: 2px;
+}
+
+#paragraphInput1{
+    margin-bottom: 10px;
+}
+#paragraphInput2{
+    margin-bottom: 10px;
+}
+
+
 
