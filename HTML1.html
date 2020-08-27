@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="CSS1.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS%20Designs/Header.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS%20Designs/LoginMenu.css"/>
+
     <meta charset="UTF-8">
     <title>Crazy Sons Of Bitches</title>
+
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="Semantic-UI-CSS-master/semantic.min.js"></script>
 </head>
 <body>
-<header>
+<div class="header" id="Header">
     <!--    badan-->
-    <a href="#badan" class="Header-Link">ورود/ثبت نام</a>
+    <div class="ui button" onclick="showLoginMenu()">ورود/ثبت نام</div>
+<!--    <a href="#badan" class="Header-Link">ورود/ثبت نام</a>-->
     <ul id="Header-UnOrderedList">
         <li class="Header-UnOrderedList-Item" value="KireKhar">
-            <a href="KireKhar" class="Header-UnOrderedList-Item">KireKhar</a>
+            <a href="KireKhar" class="Header-UnOrderedList-Item">دسته بندی ها</a>
         </li>
         <li class="Header-UnOrderedList-Item" value="KireKhar">
-            <a href="KireKhar" class="Header-UnOrderedList-Item">KireKhar</a>
+            <a href="KireKhar" class="Header-UnOrderedList-Item">مشاهده</a>
         </li>
         <li class="Header-UnOrderedList-Item" value="KireKhar">
-            <a href="KireKhar" class="Header-UnOrderedList-Item">KireKhar</a>
+            <a href="KireKhar" class="Header-UnOrderedList-Item">دنبال کننده ها</a>
         </li>
         <li class="Header-UnOrderedList-Item" value="KireKhar">
-            <a href="KireKhar" class="Header-UnOrderedList-Item">KireKhar</a>
+            <a href="KireKhar" class="Header-UnOrderedList-Item">دنبال شونده ها</a>
         </li>
     </ul>
-    <a href="#badan" class="Header-Link"><img src="#badan" alt="Licencia"/></a>
-</header>
+    <a href="#badan" class="Header-Link"><img src="Pics/Licencia-Logo.png" alt="Licencia" id="Logo"/></a>
+</div>
 
+<div class="ui modal" id="Login-Menu">
+    <div class="header" id="Login-Menu-Header">
+        <div class="image content">
+            <img src="Pics/Licencia-Logo.png" alt="logoLicencia"/>
+        </div>
+        <h3 id="welcomeHeader">Welcome TO Licencia</h3>
+    </div>
+    <div class="content">
+        <div class="ui form">
+            <!--            divider-->
+            <div class="ui form">
+                <div class="ui paragraph">Email Address</div>
+                <label>
+                    <input type="text" class="div-div-div-input" placeholder="email address">
+                </label>
+            </div>
+            <div class="ui form">
+                <div class="ui paragraph">Password</div>
+                <label>
+                    <input type="text" class="div-div-div-input" placeholder="password">
+                </label>
+            </div>
+        </div>
+    </div>
+    <footer class="div-div-loginFooter">
+        <p class="div-div-footer-p">آیا حساب ندارید؟<a class="div-div-footer-signupLink" href="#signup">ثبت نام</a> </p>
+    </footer>
+</div>
+
+<script src="JS1.js"></script>
 </body>
 </html>

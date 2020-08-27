@@ -1,0 +1,15 @@
+#Login-Menu {
+    width: 40%;
+    display: none;
+}
+
+
+#Login-Menu-Header {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcomeHeader {
+    /*badan*/
+}
+
