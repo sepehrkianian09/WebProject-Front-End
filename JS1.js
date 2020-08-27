@@ -3,3 +3,9 @@ function showLoginMenu() {
         .modal('show')
     ;
 }
+
+function showSignupMenu(){
+    $('.ui.modal')
+        .modal('show')
+    ;
+}
