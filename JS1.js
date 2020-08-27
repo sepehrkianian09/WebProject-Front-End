@@ -1,1 +1,5 @@
-console.log(jQuery().jquery);
+function showLoginMenu() {
+    $('.ui.modal')
+        .modal('show')
+    ;
+}
