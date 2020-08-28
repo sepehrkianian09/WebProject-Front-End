@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS%20Designs/loginSignupInput.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS%20Designs/Header.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS%20Designs/LoginMenu.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS%20Designs/content1.css"/>
 
     <meta charset="UTF-8">
     <title>Crazy Sons Of Bitches</title>
@@ -22,7 +23,7 @@
 <body>
 <div class="header" id="Header">
     <!--    badan-->
-    <div class="ui button" onclick="showLoginMenu()">ورود / ثبت نام</div>
+    <div class="ui button loginButton" onclick="showLoginMenu()">ورود / ثبت نام</div>
     <ul id="Header-UnOrderedList">
         <li class="Header-UnOrderedList-Item" value="KireKhar">
             <a href="KireKhar" class="Header-UnOrderedList-Item">دسته بندی ها</a>
@@ -58,16 +59,18 @@
             <div class="ui form">
                 <div class="ui paragraph paragraphInput">نام کاربری یا ایمیل</div>
                 <label>
-                    <input maxlength="50" type="text" class="div-div-div-input" id="login-KeyPoint" placeholder="Username Or Email">
+                    <input maxlength="50" type="text" class="div-div-div-input" id="login-KeyPoint"
+                           placeholder="Username Or Email">
                 </label>
             </div>
             <div class="ui form">
                 <div class="ui paragraph paragraphInput">رمز عبور</div>
                 <label>
-                    <input maxlength="30" type="text" class="div-div-div-input" id="login-Password" placeholder="Password">
+                    <input maxlength="30" type="text" class="div-div-div-input" id="login-Password"
+                           placeholder="Password">
                 </label>
             </div>
-            <div class="ui form" id="Login-Footer-Form" >
+            <div class="ui form" id="Login-Footer-Form">
                 <label>
                     <input onclick="login()" type="submit" id="loginButton" class="ui green button" value="login">
                 </label>
@@ -84,7 +87,8 @@
             <div class="ui form">
                 <div class="ui paragraph paragraphInput">نام کاربری</div>
                 <label>
-                    <input maxlength="30" type="text" class="div-div-div-input" id="SignUp-UserName" placeholder="username">
+                    <input maxlength="30" type="text" class="div-div-div-input" id="SignUp-UserName"
+                           placeholder="username">
                 </label>
             </div>
             <div class="ui form">
@@ -97,19 +101,22 @@
             <div class="ui form">
                 <div class="ui paragraph paragraphInput">نام خانوادگی</div>
                 <label>
-                    <input maxlength="30" type="text" class="div-div-div-input" id="SignUp-LastName" placeholder="LastName">
+                    <input maxlength="30" type="text" class="div-div-div-input" id="SignUp-LastName"
+                           placeholder="LastName">
                 </label>
             </div>
             <div class="ui form">
                 <div class="ui paragraph paragraphInput">ایمیل</div>
                 <label>
-                    <input maxlength="50" type="text" class="div-div-div-input" id="SignUp-Email" placeholder="Email Address">
+                    <input maxlength="50" type="text" class="div-div-div-input" id="SignUp-Email"
+                           placeholder="Email Address">
                 </label>
             </div>
             <div class="ui form">
                 <div class="ui paragraph paragraphInput">رمز عبور</div>
                 <label>
-                    <input maxlength="30" type="password" class="div-div-div-input" id="SignUp-Password" placeholder="Password">
+                    <input maxlength="30" type="password" class="div-div-div-input" id="SignUp-Password"
+                           placeholder="Password">
                 </label>
             </div>
             <div class="ui form">
@@ -135,6 +142,26 @@
         </div>
     </div>
     <script src="../Js%20Functionals/Login%20SignUp%20Method.js"></script>
+</div>
+<div class="content div-content" id="div-content1">
+    <div class="image content codingPersonImageDiv">
+        <img src="../Pics/codingPerson.jpg" alt="a person is coding"/>
+    </div>
+    <div class="ui paragraph content-paragraphHeader">
+        <h2 id="textH">لیسنسیا بزرگ است و بزرگ میندیشد</h2>
+        <p id="textP">بزرگترین سایت ایران برای فریلنسر ها</p>
+        <div type="submit" class="ui green button" id="subscribeButton">عضوی از ما باشید</div>
+    </div>
+</div>
+
+<div class="content div-content">
+    <div class="image content codingPersonImageDiv" >
+        <img src="../Pics/codingPerson.jpg" alt="a person is coding"/>
+    </div>
+    <div class="ui paragraph content-paragraphHeader">
+        <h2 class="textH">لیسنسیا بزرگ است و بزرگ میندیشد</h2>
+        <p class="textP">بزرگترین سایت ایران برای فریلنسر ها</p>
+    </div>
 </div>
 
 <script src="../Js%20Functionals/Login%20SignUp%20Show.js"></script>

@@ -8,14 +8,16 @@
 
 body {
     display: flex;
+    flex-direction: column;
     background-color: var(--Body-Background-Color);
 }
 
 #Header {
     width: 100%;
     height: fit-content;
-    padding: 40px 40px;
+    padding: 40px 40px 10px 40px;
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     background-color: transparent;
@@ -25,11 +27,22 @@ body {
 
 #Header-UnOrderedList {
     padding-inline-start: 0;
-    margin: 0 0 0 180px;
+    margin: 20px 0 0 600px;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 850px){
+    #Header-UnOrderedList {
+        margin: 0 0 0 200px;
+    }
+}
+@media screen and (max-width: 850px){
+    #Header-UnOrderedList {
+        margin: 0 0 0 100px;
+    }
 }
 
 .Header-UnOrderedList-Item {
-     /*badan*/
+    /*badan*/
     display: inline-flex;
     flex-direction: row;
     padding: 0 10px;
@@ -44,6 +57,13 @@ body {
 }
 
 #Logo {
-    width: 30px;
-    max-height: 30px;
+    width: 70px;
+    max-height: 50px;
+}
+
+.loginButton {
+    min-width: 115px;
+    max-width: 115px;
+    min-height: 40px;
+    max-height: 40px;
 }
