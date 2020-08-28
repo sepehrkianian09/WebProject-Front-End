@@ -1,5 +1,5 @@
-const urlSignUp = "https://localhost:8008/register"
-const urlLogin = "https://localhost:8008/login"
+const urlSignUp = "http://localhost:8008/register"
+const urlLogin = "http://localhost:8008/login"
 
 
 const signUpUsername = document.getElementById("SignUp-UserName")
@@ -28,9 +28,11 @@ function signUp() {
             mode: 'cors',
             cache: 'no-cache',
             credentials: 'same-origin',
-            key: signUpIsFreeLancer.value ? "freelancer" : "karfarma",
             headers: {
                 'Content-Type': 'application/json'
+            },
+            params: {
+                accountType: signUpIsFreeLancer.value ? "freelancer" : "employer"
             },
             redirect: 'follow',
             referrerPolicy: 'no-referrer',
@@ -41,11 +43,13 @@ function signUp() {
 }
 
 function successSignUp(res) {
+    console.log(res)
     console.log("ok")
 }
 
 function denySignUp(res) {
     console.log("riidii")
+    console.log(res)
 }
 
 
