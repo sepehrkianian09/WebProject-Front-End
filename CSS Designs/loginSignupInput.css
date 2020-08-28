@@ -1,0 +1,25 @@
+:root {
+    --userNameMaxLength: 30;
+    --passwordMaxLength: 30;
+    --emailMaxLength: 60;
+    --firstNameMaxLength: 30;
+    --lastNameMaxLength: 40;
+}
+
+#isFreeLancer-ToggleButton {
+    padding-left: 14px;
+}
+
+.paragraphInput {
+    margin-bottom: 10px;
+}
+
+#SignUp-UserName {
+
+}
+
+#SignUp-FirstName {
+}
+
+#SignUp-LastName {
+}

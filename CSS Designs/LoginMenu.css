@@ -37,6 +37,7 @@
     line-height: 60px;
     background-color: white;
 }
+
 .Signup-login-text:hover {
     background-color: green;
     opacity: 0.7;
@@ -60,9 +61,6 @@
     padding: 13px;
 }
 
-.paragraphInput {
-    margin-bottom: 10px;
-}
 
 #Login-Footer-Form {
     display: flex;
@@ -83,6 +81,3 @@
     padding-right: 15px;
 }
 
-#isFreeLancer-ToggleButton {
-    padding-left: 14px;
-}
