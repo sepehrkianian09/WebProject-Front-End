@@ -34,9 +34,6 @@ function change(color1, color2, display1, display2) {
     signupButton.style.backgroundColor = color2;
     signupMenu.style.display = display1;
     LoginMenu.style.display = display2;
-    console.log(signupMenu.style.display)
-    console.log(signupMenu)
-    console.log(LoginMenu)
 }
 
 

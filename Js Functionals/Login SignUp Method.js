@@ -41,7 +41,7 @@ function signUp() {
             .catch(denySignUp);*/
         const response = axios.post(urlSignUp, data, {
             params: {
-                'account-type' : (signUpIsFreeLancer.value ? 'freelancer' : 'employer')
+                'account-type' : (signUpIsFreeLancer.checked ? 'freelancer' : 'employer')
             }
         }).then(successSignUp)
             .catch(denySignUp)
