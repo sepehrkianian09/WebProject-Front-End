@@ -23,7 +23,7 @@ function signUp() {
             email: signUpEmail,
             password: signUpPassword
         }
-        const response = fetch(urlSignUp, {
+        /*const response = fetch(urlSignUp, {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
@@ -32,13 +32,19 @@ function signUp() {
                 'Content-Type': 'application/json'
             },
             params: {
-                accountType: signUpIsFreeLancer.value ? "freelancer" : "employer"
+                account_type: signUpIsFreeLancer.value ? "freelancer" : "employer"
             },
             redirect: 'follow',
             referrerPolicy: 'no-referrer',
             body: JSON.stringify(data)
         }).then(successSignUp)
-            .catch(denySignUp);
+            .catch(denySignUp);*/
+        const response = axios.post(urlSignUp, data, {
+            params: {
+                'account-type' : (signUpIsFreeLancer.value ? 'freelancer' : 'employer')
+            }
+        }).then(successSignUp)
+            .catch(denySignUp)
     }
 }
 
@@ -66,7 +72,7 @@ function login() {
             keyPoint: loginKeypoint,
             password: loginPassword
         }
-        const response = fetch(urlLogin, {
+        /*const response = fetch(urlLogin, {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
@@ -78,6 +84,9 @@ function login() {
             referrerPolicy: 'no-referrer',
             body: JSON.stringify(data)
         }).then(successLogin)
+            .catch(denyLogin);*/
+        const response = axios.get(urlLogin, data)
+            .then(successLogin)
             .catch(denyLogin);
     }
 }
@@ -93,7 +102,7 @@ function denyLogin(res) {
 function hasEmpty(...args) {
     for (let doc of args) {
         console.log(doc);
-        if (doc.value == "") {
+        if (doc.value === "") {
             return doc;
         }
     }
