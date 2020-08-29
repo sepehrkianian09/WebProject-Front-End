@@ -88,11 +88,14 @@ function login() {
         const response = axios.get(urlLogin, data)
             .then(successLogin)
             .catch(denyLogin);
+        window.location.href = profilePageName;
     }
 }
 
 function successLogin(res) {
     console.log("success");
+    // Todo
+    window.location.href = profilePageName;
 }
 
 function denyLogin(res) {
