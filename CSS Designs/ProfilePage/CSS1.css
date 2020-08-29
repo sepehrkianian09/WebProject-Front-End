@@ -1,0 +1,32 @@
+#ProfileContent {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#MainProfileContent {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+#MainProfileForm {
+    padding: 70px 40px 70px 60px;
+    width: 100%;
+}
+
+
+#ImageTippoContent {
+    display: flex;
+    flex-direction: column;
+    margin: auto 40px;
+    width: 30%;
+}
+
+#TippoTag {
+    max-width: 190px;
+    margin: 10px auto;
+}
+
+
