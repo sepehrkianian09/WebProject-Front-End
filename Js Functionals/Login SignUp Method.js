@@ -41,7 +41,7 @@ function signUp() {
             .catch(denySignUp);*/
         const response = axios.post(urlSignUp, data, {
             params: {
-                'account-type' : (signUpIsFreeLancer.checked ? 'freelancer' : 'employer')
+                'account-type': (signUpIsFreeLancer.checked ? 'freelancer' : 'employer')
             }
         }).then(successSignUp)
             .catch(denySignUp)
@@ -72,22 +72,30 @@ function login() {
             keyPoint: loginKeypoint,
             password: loginPassword
         }
-        /*const response = fetch(urlLogin, {
+        let headers = new Headers();
+
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
+        headers.append('Authorization', 'Basic ' + base64.encode(username + ":" +  password));
+        headers.append('Origin','http://localhost:3000');
+        const response = fetch(urlLogin, {
             method: 'POST',
             mode: 'cors',
             cache: 'no-cache',
             credentials: 'same-origin',
-            headers: {
+            headers:headers/* {
+                'Access-Control-Allow-Origin': 'http://localhost:3000',
+                'Access-Control-Allow-Credentials': 'true',
                 'Content-Type': 'application/json'
-            },
+            }*/,
             redirect: 'follow',
             referrerPolicy: 'no-referrer',
             body: JSON.stringify(data)
         }).then(successLogin)
-            .catch(denyLogin);*/
-        const response = axios.get(urlLogin, data)
-            .then(successLogin)
             .catch(denyLogin);
+        /*const response = axios.get(urlLogin, data)
+            .then(successLogin)
+            .catch(denyLogin);*/
     }
 }
 
