@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../CSS%20Designs/Header.css"/>
     <link rel="stylesheet" type="text/css" href="../CSS%20Designs/ProfilePage/CSS1.css"/>
+    <link rel="stylesheet" type="text/css" href="../CSS%20Designs/basic.css"/>
 
     <meta charset="UTF-8">
     <title>*User*'s Page</title>
@@ -41,10 +42,18 @@
 </div>
 <div class="content" id="ProfileContent">
     <div class="content" id="MainProfileContent">
-        <div class="content" id="ImageTippoContent">
-            <img class="ui circular bordered image" src="../Pics/Licencia-Logo.png" alt="*User*'s Picture" />
-            <a class="ui teal tag label" id="TippoTag" href="Todo">El Tippo</a>
+        <div class="flexColumn" id="leftDiv">
+            <div class="ui large buttons" id="chooseEditProjects">
+                <button class="ui button" onclick="edit()">ویرایش</button>
+                <div class="or"></div>
+                <button class="ui button" onclick="projects()">پروژه ها</button>
+            </div>
+            <div class="content" id="ImageTippoContent">
+                <img class="ui circular bordered image" src="../Pics/codingPerson.jpg" alt="*User*'s Picture"/>
+                <a class="ui teal tag label" id="TippoTag" href="Todo">El Tippo</a>
+            </div>
         </div>
+
         <div class="ui form" id="MainProfileForm">
             <div class="two fields">
                 <div class="field">
@@ -94,11 +103,11 @@
             <div class="two fields">
                 <div class="field">
                     <label>توضیحات</label>
-                    <textarea rows="3" ></textarea>
+                    <textarea rows="3"></textarea>
                 </div>
                 <div class="field">
                     <label>آدرس</label>
-                    <textarea rows="3" ></textarea>
+                    <textarea rows="3"></textarea>
                 </div>
             </div>
         </div>

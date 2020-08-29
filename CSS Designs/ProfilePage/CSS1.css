@@ -20,8 +20,7 @@
 #ImageTippoContent {
     display: flex;
     flex-direction: column;
-    margin: auto 40px;
-    width: 30%;
+    margin: auto 0;
 }
 
 #TippoTag {
@@ -30,3 +29,13 @@
 }
 
 
+#leftDiv {
+    padding: 20px;
+    width: 40%;
+}
+
+#chooseEditProjects {
+    margin: 20px auto;
+    max-width: 280px;
+    min-width: 250px;
+}
